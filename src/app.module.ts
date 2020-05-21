@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { CropModule } from './crop/crop.module';
 
 @Module({
-    imports: [],
+    imports: [CropModule],
     controllers: [],
     providers: [],
 })
