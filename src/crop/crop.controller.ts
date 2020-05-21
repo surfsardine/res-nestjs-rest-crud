@@ -21,6 +21,9 @@ import { UpdateCropDto } from './dto/update-crop.dto';
         create: CreateCropDto,
         update: UpdateCropDto,
     },
+    serialize: {
+        get: Crop,
+    }
 })
 @Controller('Crop')
 export class CropController implements CrudController<Crop> {
