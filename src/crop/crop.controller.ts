@@ -7,6 +7,14 @@ import { Crop } from './crop.entity';
     model: {
         type: Crop,
     },
+    routes: {
+        only: [
+            'getOneBase',
+            'createOneBase',
+            'updateOneBase',
+            'deleteOneBase',
+        ],
+    },
 })
 @Controller('Crop')
 export class CropController implements CrudController<Crop> {
