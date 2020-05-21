@@ -7,7 +7,7 @@ import { Crop } from './crop/crop.entity';
     imports: [
         TypeOrmModule.forRoot({
             type: 'sqlite',
-            database: '../crops.db',
+            database: './crops.db',
             entities: [Crop],
             synchronize: true,
         }),
