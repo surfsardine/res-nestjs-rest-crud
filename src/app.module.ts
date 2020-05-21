@@ -1,13 +1,14 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { CropModule } from './crop/crop.module';
+import { Crop } from './crop/crop.entity';
 
 @Module({
     imports: [
         TypeOrmModule.forRoot({
             type: 'sqlite',
             database: '../crops.db',
-            entities: [__dirname + '/**/*.entity.ts'],
+            entities: [Crop],
             synchronize: true,
         }),
         CropModule,
