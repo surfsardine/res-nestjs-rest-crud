@@ -8,6 +8,6 @@ export class Crop {
     @Column({ length: 255 })
     name: string;
 
-    @Column({ length: 255 })
+    @Column({ length: 255, nullable: true })
     description: string;
 }
